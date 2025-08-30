@@ -32,8 +32,8 @@ As TikTok operates globally, every product feature must dynamically satisfy doze
 
 1. **Clone the repository**
    ```bash
-   git clone <repository-url>
-   cd techjam
+   git clone https://github.com/samuelthen/tiktok-techjam-geocompliance
+   cd tiktok-techjam-geocompliance
    ```
 
 2. **Install dependencies**

@@ -71,14 +71,13 @@ This prototype system utilizes LLM capabilities with RAGFlow integration to:
 
 ### RAGFlow Setup
 
-This system requires a RAGFlow instance with regulatory compliance documents loaded. The RAGFlow assistant should be trained on:
+This system requires a RAGFlow instance with regulatory compliance documents loaded. The knowledge base contains the following 5 documents:
 
-- Digital Services Act (DSA)
-- California Kids Act / SB976
-- Florida/Utah Minor Protection Laws
-- NCMEC reporting requirements
-- GDPR
-- Data localization laws by region
+1. **EU Digital Services Act (DSA)** - European content moderation and transparency requirements
+2. **California - Protecting Our Kids from Social Media Addiction Act** - State-level social media restrictions for minors
+3. **Florida - Online Protections for Minors** - Age verification and content filtering requirements
+4. **Utah - Utah Social Media Regulation Act** - Social media platform obligations for minors
+5. **US - Reporting requirements for child sexual abuse content to NCMEC** - Federal reporting obligations for platforms
 
 ### Environment Variables
 

@@ -121,7 +121,7 @@ This system requires a RAGFlow instance with regulatory compliance documents loa
 *Clean, TikTok-themed interface for entering feature descriptions*
 
 #### Compliance Required Analysis
-![Compliance Analysis with Evidence](compliance_with evidence.png)
+![Compliance Analysis with Evidence](compliance_with_evidence.png)
 *System identifies features requiring geo-compliance logic with supporting evidence*
 
 #### Compliance Review Needed

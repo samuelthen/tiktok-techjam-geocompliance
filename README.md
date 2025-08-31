@@ -112,6 +112,44 @@ This system requires a RAGFlow instance with regulatory compliance documents loa
 ❓ **Needs Human Review:**
 - "Video filter feature available globally except KR" (no legal reason specified)
 
+## Demo
+
+### Application Interface
+
+#### Landing Page
+![Landing Page](landing_page.png)
+*Clean, TikTok-themed interface for entering feature descriptions*
+
+#### Compliance Required Analysis
+![Compliance Analysis with Evidence](compliance_with evidence.png)
+*System identifies features requiring geo-compliance logic with supporting evidence*
+
+#### Compliance Review Needed
+![Compliance Review](compliance_review.png)
+*Uncertain cases flagged for human review with detailed reasoning*
+
+#### No Compliance Required
+![No Compliance Required](no_compliance.png)
+*Business-driven features correctly identified as not requiring compliance logic*
+
+### Sample Analysis Workflow
+
+1. **Input**: "Live streaming with age verification for users under 16 in Indonesia"
+
+2. **System Processing**:
+   - Connects to RAGFlow assistant
+   - Retrieves relevant regulatory documents
+   - Analyzes compliance requirements using LLM
+
+3. **Output**:
+   - **Classification**: YES
+   - **Confidence**: 9/10
+   - **Reasoning**: Feature requires age verification logic specific to Indonesian Child Protection Law compliance
+   - **Regulations**: Indonesia Law No. 35/2014 on Child Protection, Digital platform age verification requirements
+   - **Evidence**: Retrieved document chunks showing specific age verification requirements for Indonesian minors
+
+4. **Result**: System correctly identifies this as a legal compliance requirement, not a business decision
+
 ## System Architecture
 
 ```
@@ -213,5 +251,5 @@ To adapt for different compliance domains:
 
 ## Hackathon Context
 
-Developed for the **TikTok Tech Jam: From Guesswork to Governance** workshop (August 27, 2025). This prototype addresses the challenge of automating geo-regulation compliance detection using LLM capabilities.
+Developed for the **TikTok Tech Jam: From Guesswork to Governance**. This prototype addresses the challenge of automating geo-regulation compliance detection using LLM capabilities.
 

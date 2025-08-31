@@ -1,24 +1,28 @@
 # TikTok Geo-Compliance Co-pilot
 
-AI-powered geo-specific regulatory compliance analysis system for TikTok features.
-
-## Overview
-
-This prototype system utilizes LLM capabilities to flag features that require geo-specific compliance logic, turning regulatory detection from a blind spot into a traceable, auditable output.
-
-**Key Features:**
-- Automated compliance analysis for TikTok features
-- Distinguishes between legal compliance requirements vs business decisions
-- Evidence-based reasoning with regulatory document references
-- Clean web interface for feature analysis
-- Audit-ready transparency with detailed reporting
+AI-powered geo-specific regulatory compliance analysis system that helps TikTok product teams identify features requiring geo-specific compliance logic.
 
 ## Problem Statement
 
-As TikTok operates globally, every product feature must dynamically satisfy dozens of geographic regulations – from Brazil's data localization to GDPR. This system helps answer:
+As TikTok operates globally, every product feature must dynamically satisfy dozens of geographic regulations – from Brazil's data localization to GDPR. This system addresses the critical challenge of distinguishing between:
 
-- "Does this feature require dedicated logic to comply with region-specific legal obligations?"
-- "How many features have we rolled out to ensure compliance with this regulation?"
+- ✅ **Legal compliance requirements** (e.g., age gates for Indonesia Child Protection Law)
+- ❌ **Business decisions** (e.g., market testing restrictions)
+- ❓ **Unclear cases** requiring human review
+
+**Without automated compliance detection, risks include:**
+- ⚖️ Legal exposure from undetected compliance gaps
+- 🛑 Reactive firefighting during regulatory inquiries
+- 🚧 Manual overhead in scaling global feature rollouts
+
+## Solution
+
+This prototype system utilizes LLM capabilities with RAGFlow integration to:
+
+- **Flag features** that require geo-specific compliance logic
+- **Provide evidence-based reasoning** with regulatory document references
+- **Generate audit trails** for regulatory transparency
+- **Distinguish** between legal requirements vs business decisions
 
 ## Quick Start
 
@@ -32,7 +36,7 @@ As TikTok operates globally, every product feature must dynamically satisfy doze
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/samuelthen/tiktok-techjam-geocompliance
+   git clone https://github.com/samuelthen/tiktok-techjam-geocompliance.git
    cd tiktok-techjam-geocompliance
    ```
 
@@ -121,7 +125,7 @@ Results Display ← Processed Response ← Confidence Scoring
 ## Files Structure
 
 ```
-techjam/
+tiktok-techjam-geocompliance/
 ├── fixed_tiktok_app.py      # Main Streamlit application
 ├── ragflow_client.py        # RAGFlow integration client
 ├── reranking_utils.py       # Evidence reranking utilities
@@ -199,10 +203,15 @@ To adapt for different compliance domains:
 - Validate all compliance decisions with legal teams
 - Implement proper access controls and data governance
 
-## Contributing
+## Development Tools & Technologies
 
-This project was developed for the TikTok Tech Jam hackathon. Features and improvements welcome!
+- **Frontend**: Streamlit with custom TikTok-themed CSS styling
+- **AI Integration**: RAGFlow SDK for document retrieval and LLM analysis
+- **Evidence Enhancement**: OpenAI API for intelligent evidence reranking
+- **Backend**: Python with structured response processing
+- **Dependencies**: Minimal requirements focusing on core functionality
 
-## License
+## Hackathon Context
 
-[Specify your license here]
+Developed for the **TikTok Tech Jam: From Guesswork to Governance** workshop (August 27, 2025). This prototype addresses the challenge of automating geo-regulation compliance detection using LLM capabilities.
+
